@@ -51,8 +51,15 @@ public class Baseball {
 			System.out.println(strike + "스트라이크" + ball + "볼");
 			
 			if(strike == 3) {
-			  run = false;
+//			  run = false;
 			  System.out.println("3개의 숫자를 모두 맞추셨습니다.");
+			  System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
+			  int num2 = scan.nextInt();
+			  if(num2 == 2) {
+				  run = false; 
+			  }else {
+				  continue;
+			  }
 			}	
 		}
 	}
